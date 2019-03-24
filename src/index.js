@@ -52,11 +52,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 })
 
-const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache()
-})
-
 ReactDOM.render(
   <BrowserRouter>
     <ApolloProvider client={client}>
